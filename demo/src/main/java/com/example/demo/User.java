@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "users") // 'user' is a reserved word in PostgreSQL
+@Table(name = "users") 
 public class User {
 
     @Id
@@ -20,11 +20,11 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    // One user can have many tasks
+   
     @OneToMany(mappedBy = "assignedTo", cascade = CascadeType.ALL)
     private List<Task> tasks;
 
-    // Constructors
+ 
     public User() {}
 
     public User(String name, String email, String password) {
@@ -33,7 +33,7 @@ public class User {
         this.password = password;
     }
 
-    // Getters & Setters
+   
 
     public Long getId() {
         return id;
