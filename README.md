@@ -22,7 +22,7 @@ Ensure the following are installed on your system:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone (https://github.com/Barkamol02/WProject_Final.git)
 cd movie-review-website
 ```
 
